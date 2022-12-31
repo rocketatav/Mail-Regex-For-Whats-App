@@ -1,0 +1,11 @@
+file = open("names")
+
+lines = file.read().split("\n")
+mails = []
+
+for line in lines:
+        parts = line.split(":")
+        mails.append(parts[2])
+
+mails_str = ",".join(mails)
+print(mails_str)
